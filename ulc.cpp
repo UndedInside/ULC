@@ -76,7 +76,7 @@ int calcCheckBit(long long toValidate){
   }
 
   // Calculates checkbit using the sum created previously
-  int checkBit = 10 - sumTotal % 10;
+  int checkBit = (10 - (sumTotal % 10)) % 10;
   return checkBit;
 }
 
